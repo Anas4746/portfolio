@@ -1,0 +1,177 @@
+
+.about{
+    z-index: 2;
+    height: 100vh;
+    margin-left: 15.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:auto;
+    background: url('./images/about_bgimg.jpg');
+    color: white;
+}
+.about_heading {
+    margin-top: 80px;
+    /* text-decoration: underline; */
+}
+.about_heading h1{
+    font-size: 3.5rem !important;
+    color: white;
+    font-family: auto;
+    letter-spacing: 4px;
+    border-bottom: 2px solid;
+    background: linear-gradient(45deg, black, transparent);
+}
+.about_content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.about_content_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.about_content_text span {
+    margin: 20px 0 10px 0;
+    /* text-align: center; */
+    letter-spacing: 1px;
+}
+.about_content_text a button {
+   background-color:#25a1ed;
+   color:white;
+   padding: 10px 20px;
+   font-size: medium;
+   margin-top: 1.5rem;
+    border: 0;
+}
+.about_services{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+.about_services .card {
+    width: 23rem;
+    margin-right: 20px;
+    background-color: #40424b;
+}
+.about_service_heading{
+    margin-top: 2rem ;
+}
+.about_service_heading h1 {
+    letter-spacing: 5px;
+    font-size: 3rem;
+    border-bottom: 2px solid;
+    font-family: emoji;
+}
+.about_services .card img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 20px;
+}
+.about_content_text h1 span {
+    color: #25a1ed;
+}
+.about_content_text p {
+    color: lightgray;
+    letter-spacing: 1px;
+    font-size: large;
+    margin-bottom: 0;
+}
+.about_content_text span span {
+    color:darkgray;
+}
+.about_services .card .card-body .card-text{
+    color :#c1c1c1 !important;
+    letter-spacing: .4px;
+}
+.about_services .card .card-body .card-title{
+    color :white !important;
+    letter-spacing: .7px;
+}
+@media (max-width: 858px){
+    .about{
+        margin-left: 0 !important;
+    }
+    /* .about_heading{
+        margin-top: 480px !important;
+    } */
+    }
+@media (max-width: 578px){
+    .about_content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_content_text > span {
+        font-size: large !important;
+    }
+    .about_content_text {
+        margin-top: 1rem !important;
+    }
+    .about_services {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .about_services .card {
+        margin-bottom: 20px !important;
+    } 
+    }
+@media (max-width: 400px){
+    .about_services .card{
+        width: 290px !important;
+        margin-right: 0;
+    }
+    .about_image{
+        width: 19rem !important;
+        height: 18rem !important;
+    }
+    .about_service_heading h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 354px){
+    .about_heading h1{
+        font-size: 3rem !important;
+    }
+}
+@media (min-width: 401px){
+    .about_image{
+        width: 24rem !important;
+        height: 24rem !important;
+    }
+}
+@media (min-width: 1220px){
+    .about_image{
+        width: 28rem !important;
+        height: 28rem !important;
+    }
+    .about_content_text{
+        font-size: x-large;
+    }
+}
+@media (min-width: 1525px){
+    .about_image{
+        width: 35rem !important;
+        height: 35rem !important;
+    }
+    .about_content_text{
+        line-height: 2;
+        font-size: x-large;
+    }
+    .about_content_text h1{
+        font-size: 3.5rem;
+    }
+}
+::-webkit-scrollbar{
+    width: 1rem;
+    }
+::-webkit-scrollbar-track{
+background-color: #f5b31f;
+}
+::-webkit-scrollbar-thumb{
+background-color: #a73737;
+border-radius: 1rem;
+border: 0.2rem solid transparent;
+background-clip: content-box; 
+}
